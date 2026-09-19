@@ -1,0 +1,297 @@
+/*All CSS Styles */
+/* ------------------------------------------ */
+
+/* Start of Header & Body Styles */
+
+  html, body { height: 100%; margin: 0; }
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('romain-maistre-bazin-process-light.gif');
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navigation Styles */
+        .navbar-custom { background-color: black; border-bottom: 2px solid #1c1111; display: flex; justify-content: space-between; align-items: center; }
+        .nav-box { border-right: 1px solid #c8c4c4; padding: 15px 40px; color: white; font-weight: bold; text-decoration: none; }
+        .search-area { padding: 10px; display: flex; gap: 10px; }
+        .go-btn { background: #c1db5c; color: black; border: none; padding: 10px 15px; font-weight: bold; cursor: pointer; }
+        .go-btn1 { background: #3a535b; color: white; border: none; padding: 10px 15px; font-weight: bold; cursor: pointer; }
+
+        /* Map Section */
+        .map-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .map-container {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 1000px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+
+        .map-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* The actual map frame */
+        iframe {
+            width: 100%;
+            height: 480px;
+            border: 0;
+            border-radius: 10px;
+        }
+
+        .footer-bar { width: 100%; padding: 15px 0; background-color: rgba(0, 0, 0, 0.85); color: #aaa; text-align: center; font-size: 0.85em; }
+/* End of Header & Body Styles */
+
+/* ------------------------------------------ */
+
+/* Start of index.html */
+/* General Layout & Fonts */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace !important;
+    color: #ffffff !important;
+}
+
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Custom Navigation Bar */
+.navbar-custom {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-box {
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    display: inline-block;
+    border-right: 1px solid #333333;
+}
+
+.nav-box:hover {
+    background-color: #222222;
+}
+
+.title-area {
+    padding-right: 15px;
+}
+
+.go-btn {
+    background-color: #d4e157 !important;
+    color: #000000 !important;
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Central Overlay Card */
+.overlay-card {
+    background-color: #262626;
+    width: 90%;
+    max-width: 550px;
+    margin-top: 40px;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.overlay-card h2 {
+    font-size: 1.05rem;
+    font-weight: normal;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+/* Vertical Menu Items Alignment */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.menu-container div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-container label {
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+/* Form Action Button */
+button[type="submit"] {
+    background-color: #e0e0e0 !important;
+    color: #000000 !important;
+    border: 1px solid #000000;
+    padding: 8px 18px;
+    font-size: 0.85rem;
+    font-family: 'Courier New', Courier, monospace !important;
+    cursor: pointer;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffffff !important;
+}
+
+/* Receipt Display Area */
+.receipt-section {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.receipt-section h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+#output1 p {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+/* Footer Navigation */
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.8em;
+}
+/* End of index.html */
+
+/* ------------------------------------------ */
+
+/* Start of sku.html */
+
+/* Card Container */
+.card {
+    background-color: #262626;
+    width: 90%;
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.card-header {
+    margin-bottom: 25px;
+}
+
+.card-header h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* Form Groups Layout */
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+/* Fix for invisible text inside text inputs & select boxes */
+.form-group input,
+.form-group select {
+    background-color: #ffffff !important;
+    color: #000000 !important; /* Forces typed text to be black */
+    border: 1px solid #cccccc;
+    padding: 6px 10px;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    width: 220px;
+}
+
+.form-group select option,
+.form-group select option:checked,
+.form-group select option:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Placeholder text color fix */
+.form-group input::placeholder {
+    color: #777777 !important;
+}
+
+/* Primary Button Fix */
+.btn-primary {
+    background-color: #e0e0e0 !important;
+    color: #000000 !important;
+    border: 1px solid #000000;
+    padding: 8px 18px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff !important;
+}
+
+/* SKU Output Box */
+.output-box {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    word-break: break-all;
+}
+
+/* End of sku.html */
+
+
+

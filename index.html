@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt generator (Skills Test) </title>
+   <!-- PyScript -> CSS and JS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <!-- Actual CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar-custom">
+        <div style="display: flex;">
+            <a href="sku.html" class="nav-box">║▌ SKU generator</a>
+            <a href="index.html" class="nav-box">🏷️ Receipt generator</a>
+            
+        </div>
+        <div class="title-area">
+            <button class="go-btn">The Skewer....</button>
+        </div>
+    </header>
+
+    <div class="overlay-card">
+         <div style="font-size: 1.5rem;">🍵</div>
+        <h2><b>OBMC Entrepreneurship Fair - Coffee Shop</b></h2>
+
+        <!-- Item Selection Checkboxes -->
+        <div class="menu-container">
+            <label><input type="checkbox" id="item1" value="150"> Americano (₱150)</label>
+            <label><input type="checkbox" id="item2" value="160"> Spanish Latte (₱160)</label>
+            <label><input type="checkbox" id="item3" value="180"> Cold Brew Malt (₱180)</label>
+            <label><input type="checkbox" id="item4" value="168"> Affogato (₱168)</label>
+            <label><input type="checkbox" id="item5" value="170"> Caramel Macchiato (₱170)</label>
+        </div>
+
+        <!-- The Action Button -->
+        <button type="submit" py-click="generate_order">Create order</button>
+
+        <!-- The Receipt Section -->
+        <div class="receipt-section">
+            <h3><b>Receipt....</b></h3>
+            <div id="output1">
+                <p>Subtotal: </p>
+                <p>Tax: </p>
+                <p><b>Sum/Total:</b> </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Jude T. Yunus | 10-Sapphire ©2026
+    </footer>
+
+    <!-- PyScript link -->
+    <script type="py" src="main.py"></script>
+    
+</body>
+</html>
