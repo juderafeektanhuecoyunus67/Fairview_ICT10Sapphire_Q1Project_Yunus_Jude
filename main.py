@@ -7,7 +7,7 @@ PEP 8 Compliant without using if statements.
 from pyscript import document
 
 # ==========================================
-# 1. Receipt Generator Logic (index.html)
+# 1. Start of Receipt Generator (index.html)
 # ==========================================
 
 
@@ -35,14 +35,21 @@ def generate_order(e):
     # Formatting receipt HTML string output
     receipt_html = f"<p>Sumtotal: ₱{sumtotal:.2f}</p>"
     receipt_html += f"<p>Tax: ₱{tax:.2f}</p>"
-    receipt_html += f"<p><u>Sum/Total:</u> ₱{grand_total:.2f}</p>"
+    receipt_html += f"<p><b>Sum/Total:</b> ₱{grand_total:.2f}</p>"
 
     # Display result directly to target container
     document.getElementById("output1").innerHTML = receipt_html
 
+# ==========================================
+# End of Receipt Generator (index.html)
+# ==========================================
+
+
+
+
 
 # ==========================================
-# 2. SKU Generator Logic (sku.html)
+# 2. SKU Generator (sku.html)
 # ==========================================
 
 
@@ -63,3 +70,7 @@ def generate_sku(e):
     # Output string to screen
     sku_html = f"<p>Generated Code:</p><p><b>{sku_code}</b></p>"
     document.getElementById("sku_output").innerHTML = sku_html
+
+# ==========================================
+# End of SKU Generator (sku.html)
+# ==========================================
